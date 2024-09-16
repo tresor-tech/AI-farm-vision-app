@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Model Farm Vision</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
+</head>
+<body>
+    <h1 id="heading">Welcome to our AI-powered feature Farm Vision</h1>
+    <h2 id="subheading">Try out our new farm vision AI model. This feature allows you to check whether your crops are healthy or not. Click choose a file or snap a picture of the crop in your farm, wait a bit, and you will receive the response.</h2>
+    <p class="note">For now, try out cabbages.</p>
+    <button id="languageButton">Switch to French</button>
+    <br><br>
+    <input type="file" id="imageUpload" accept="image/*">
+    <br><br>
+    <img id="uploadedImage" width="200" style="display:none;">
+    <div id="label-container"></div>
+    <div id="result"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
+    <script src="script.js"></script> <!-- Link to external JS file -->
+</body>
+</html>
